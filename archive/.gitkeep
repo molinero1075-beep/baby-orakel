@@ -1,0 +1,3 @@
+Dieser Ordner nimmt abgeloeste Fassungen von Dokumenten und Inhaltsdateien auf
+(Regel "Archivieren statt Loeschen", siehe ~/.claude/CLAUDE.md).
+Die Datei .gitkeep sorgt nur dafuer, dass der leere Ordner in Git erhalten bleibt.

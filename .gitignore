@@ -1,0 +1,58 @@
+# .gitignore fuer baby-orakel
+# Uebernommen aus der zentralen Vorlage ~/admin-tools/templates/gitignore.template
+# (Stand 11.09.2026), unten projektspezifisch ergaenzt.
+
+# --- Zugangsdaten und Geheimnisse (niemals einchecken) ---
+.env
+# alle Varianten wie .env.local, .env.production usw.
+.env.*
+# Ausnahme: die Platzhalter-Datei OHNE echte Werte darf sichtbar bleiben
+# (siehe PROJEKT_STANDARD.md, Abschnitt "Pflichtdateien")
+!.env.example
+*.pem
+*.key
+secrets.json
+token.txt
+# alles mit "credentials" im Dateinamen, z.B. gcp-credentials.json
+*credentials*
+
+# --- Ordner mit sensiblem Inhalt, egal wo im Projekt sie liegen ---
+# (Gross-/Kleinschreibung beliebig, daher [Rr] statt nur r)
+*[Rr]ecovery*/
+*[Ss]ecret*/
+*[Pp]rivat*/
+
+# --- Screenshots/Bilder direkt im Wurzelverzeichnis ---
+# Der fuehrende Schraegstrich "/" heisst: nur im Hauptordner, NICHT in
+# Unterordnern wie docs/ oder reports/ - dort duerfen Bilder bleiben,
+# falls sie mal gebraucht werden.
+/*.png
+/*.jpg
+/*.jpeg
+/*.gif
+
+# --- Persoenliche Claude-Code-Einstellungen dieses Rechners ---
+# laut PROJEKT_STANDARD.md Abschnitt 5: settings.json wird eingecheckt,
+# settings.local.json ausdruecklich NICHT (persoenliche Ausnahmen)
+.claude/settings.local.json
+
+# --- Python-Arbeitsdateien (entstehen automatisch beim Ausfuehren) ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# --- Sonstiger Muell, der nicht in die Versionsgeschichte gehoert ---
+*.local
+logs/
+*.log
+.DS_Store
+Thumbs.db
+
+# --- PROJEKTSPEZIFISCH: baby-orakel ---
+# Ausgefuellte Karten, die beim Testen im Browser heruntergeladen werden.
+# Sie enthalten Tipps einzelner Personen und gehoeren nicht ins oeffentliche Repo.
+baby-orakel-*.png
