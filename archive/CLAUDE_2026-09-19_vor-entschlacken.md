@@ -8,7 +8,9 @@ Geburtstermin, Gewicht, Name usw., bekommen daraus eine fertige Karte als Bild u
 teilen sie selbst in einer WhatsApp-Gruppe. Veroeffentlicht ueber GitHub Pages.
 
 ## Projektgedaechtnis lesen (Token sparen)
-Bei neuem Chat: NUR den Abschnitt "AKTUELLER STAND" oben in PROJEKTGEDAECHTNIS.md UND den juengsten (untersten) Protokollblock vollstaendig lesen; aeltere Bloecke nur bei konkretem Bedarf gezielt per grep/Read.
+Bei neuem Chat: NUR den Abschnitt "AKTUELLER STAND" oben in PROJEKTGEDAECHTNIS.md
+UND den juengsten (untersten) Protokollblock vollstaendig lesen. Aeltere Bloecke
+NICHT laden, sondern nur bei konkretem Bedarf gezielt per grep/Read durchsuchen.
 
 ## Befehle (woertlich zum Kopieren)
 
@@ -52,3 +54,8 @@ einen Server, sondern laeuft vollstaendig im Browser des Gastes.
 - Keine Eingaben der Gaeste an einen Server senden, solange Nils das nicht
   ausdruecklich beauftragt (Datenschutz: Daten Dritter, siehe README, Vorhaben 004).
 - Nicht committen oder pushen: Commit und Push macht Nils selbst im rohen Terminal.
+- Keine Aenderungen an zentralen Admin-Werkzeugen (~/admin-tools, ~/lessons-learned)
+  aus diesem Projekt heraus — stattdessen ein Briefing fuer den Admin-Chat liefern.
+  EINZIGE Ausnahme (seit 19.09.2026): der Gehirn-Eingang - neue Erkenntnisse und Briefings
+  als Datei in ~/lessons-learned/eingang/, dann "bash ~/admin-tools/gehirn_einsortieren.sh"
+  (~/.claude/CLAUDE.md, Abschnitt "Zentrales Gehirn"). Kein Copy-Paste mehr.
