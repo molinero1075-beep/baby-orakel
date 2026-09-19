@@ -56,6 +56,3 @@ einen Server, sondern laeuft vollstaendig im Browser des Gastes.
 - Nicht committen oder pushen: Commit und Push macht Nils selbst im rohen Terminal.
 - Keine Aenderungen an zentralen Admin-Werkzeugen (~/admin-tools, ~/lessons-learned)
   aus diesem Projekt heraus — stattdessen ein Briefing fuer den Admin-Chat liefern.
-  EINZIGE Ausnahme (seit 19.09.2026): der Gehirn-Eingang - neue Erkenntnisse und Briefings
-  als Datei in ~/lessons-learned/eingang/, dann "bash ~/admin-tools/gehirn_einsortieren.sh"
-  (~/.claude/CLAUDE.md, Abschnitt "Zentrales Gehirn"). Kein Copy-Paste mehr.
