@@ -51,5 +51,4 @@ einen Server, sondern laeuft vollstaendig im Browser des Gastes.
   dieser Seite ist, dass sie eine einzige Datei ohne Serverbedarf ist.
 - Keine Eingaben der Gaeste an einen Server senden, solange Nils das nicht
   ausdruecklich beauftragt (Datenschutz: Daten Dritter, siehe README, Vorhaben 004).
-- Commit und Push erledigt Claude selbst (globale Regel "Selbst entscheiden statt fragen"); vorher Branch und
-  fremde offene Dateien pruefen.
+- Nicht committen oder pushen: Commit und Push macht Nils selbst im rohen Terminal.
