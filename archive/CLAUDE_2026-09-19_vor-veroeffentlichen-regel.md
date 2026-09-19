@@ -16,9 +16,8 @@ Bei neuem Chat: NUR den Abschnitt "AKTUELLER STAND" oben in PROJEKTGEDAECHTNIS.m
 # Seite oertlich im Windows-Browser ansehen (kein Server noetig):
 explorer.exe "$(wslpath -w ~/baby-orakel/index.html)"
 
-# Veroeffentlichen = Push (GitHub Pages). Erledigt Claude; aendert sich die oeffentlich sichtbare Seite,
-# vorher Nils kurz fragen (siehe Arbeitsweise). Nur die eigenen Dateien aufnehmen, nie "git add -A":
-cd ~/baby-orakel && git add <dateien> && git commit -m "..." && git push
+# Veroeffentlichen (macht Nils selbst im rohen Terminal):
+cd ~/baby-orakel && git add -A && git commit -m "..." && git push
 
 # Zustandsuebersicht:
 bash ~/admin-tools/diagnose.sh ~/baby-orakel
@@ -53,6 +52,4 @@ einen Server, sondern laeuft vollstaendig im Browser des Gastes.
 - Keine Eingaben der Gaeste an einen Server senden, solange Nils das nicht
   ausdruecklich beauftragt (Datenschutz: Daten Dritter, siehe README, Vorhaben 004).
 - Commit und Push erledigt Claude selbst (globale Regel "Selbst entscheiden statt fragen"); vorher Branch und
-  fremde offene Dateien pruefen. AUSNAHME (Nils 19.09.2026): Ein Push veroeffentlicht hier die Seite (GitHub
-  Pages). Aendert sich die oeffentlich sichtbare Seite (index.html, Skripte, Stile, Bilder), vorher kurz per
-  Ja/Nein fragen "veroeffentlichen?"; reine Doku- und Gedaechtnis-Aenderungen gehen ohne Frage raus.
+  fremde offene Dateien pruefen.
