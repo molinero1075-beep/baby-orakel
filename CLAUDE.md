@@ -8,7 +8,7 @@ Geburtstermin, Gewicht, Name usw., bekommen daraus eine fertige Karte als Bild u
 teilen sie selbst in einer WhatsApp-Gruppe. Veroeffentlicht ueber GitHub Pages.
 
 ## Projektgedaechtnis lesen (Token sparen)
-Bei neuem Chat: NUR den Abschnitt "AKTUELLER STAND" oben in PROJEKTGEDAECHTNIS.md UND den juengsten (untersten) Protokollblock vollstaendig lesen; aeltere Bloecke nur bei konkretem Bedarf gezielt per grep/Read.
+Leseregel: global (Start-Hook speist AKTUELLEN STAND ein, siehe ~/.claude/CLAUDE.md); Protokollbloecke, auch den juengsten, nur bei konkretem Bedarf gezielt per grep/Read.
 
 ## Befehle (woertlich zum Kopieren)
 
